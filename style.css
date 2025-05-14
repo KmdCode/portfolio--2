@@ -1,70 +1,196 @@
 body{
     margin: 0;
     padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: aliceblue;
+}
+header h1{
+    color: white;
 }
 
 header{
-    position: fixed;
-    z-index: 10;
-    border-bottom: 1px solid blue;
+    position: sticky;
+    z-index: 100;
     width: 100%;
-    background-color: aqua;
-    
+    background-color: #2c3e50;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
 }
 
-header ul{
+nav ul{
   margin: 30px auto;
   padding: 0 20px;
   text-align: center;
   list-style: none;
 }
 
-header li {
+nav li {
   font-family: 'Oswald', sans-serif;
   font-size: 16px;
   font-weight: 300;
-  text-transform: uppercase;
   width: 80px;
   padding: 5px;
-  float: right;
+  float: left;
   list-style: none;
+ 
 }
 
-
+nav li a{
+    text-decoration: none;
+    color: white;
+}
 
 #about-me{
-    margin-top: 150px;
-    display: inline-block;
-    margin-bottom: 20px;
+    display: flex;
     align-items: center;
-    margin-left: 50px;
+    margin: 20px 150px;
+    border-bottom: 1px solid rgb(212, 213, 218);
+    padding-bottom: 50px;
 }
 
-img{
+#image img{
     border-radius: 10px;
 }
 
-#skills ul{
-    margin: 30px auto;
-  padding: 0 20px;
-  text-align: center;
-  list-style: none;
+#image {
+    padding: 10px;
+
+}
+
+#image img{
+    width: 320px;
+    height: 320px
+}
+
+#content {
+    margin: 50px;
+    clear: right;
+}
+
+#content h1{
+    border-bottom:3px solid #3498db;
+    display: inline-block;
+}
+
+#skills {
+    margin: 20px 150px;
+    border-bottom: 1px solid rgb(212, 213, 218);
+    padding: 30px;
+}
+
+#skills ul {
+    display: flex;
+    list-style: none;
+}
+
+#skills h1 {
+    border-bottom: 2px solid #3498db;
+    display: inline-block;
 }
 
 #skills li {
-  font-size: 16px;
-  font-weight: 200;
-  width: 80px;
-  padding: 5px;
-  float: right;
-  list-style: none;
-  border: solid;
-  border-radius: 10px;
-  margin: 10px;
-  border-color: bisque;
+    border: 1px solid ;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+    background-color: #3498db;
+    align-items: left;
+    margin-left: 20px;
 }
 
 #projects {
+    margin: 20px 150px ;
+    border-bottom: 1px solid rgb(212, 213, 218);
+    padding: 30px;
+}
+
+#projects h1{
+    border-bottom: 2px solid #3498db;
     display: inline-block;
-    border: 1px solid brown;
+}
+
+#projects #pros {
+    display: flex;
+}
+
+#projects article {
+    margin: 20px;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+#projects a {
+    text-decoration: none;
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+
+#contact {
+    margin: 20px 150px;
+}
+
+#contact h1{
+    border-bottom: 2px solid #3498db;
+    display: inline-block;
+}
+
+#contact form {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 2rem auto 0;
+}
+
+#contact label {
+    display:block;
+    margin: 10px;
+}
+
+#contact input, textarea {
+    width: 90%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#contact textarea {
+    width: 90%;
+    height: 5rem;
+}
+
+#contact button {
+    background-color: #3498db;
+    color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    margin: 10px;
+    border: #3498db;
+}
+
+footer {
+    background-color: #2c3e50;
+    padding: 10px;
+    align-items: center;
+    color: white;
+}
+footer #links {
+    align-items: center;
+}
+#links a{
+    margin: 4rem;
+    text-decoration: none;
+    color: white;
+}
+#links p{
+    margin: 4rem;
+    align-items: center;
 }
