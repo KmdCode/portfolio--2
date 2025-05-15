@@ -201,7 +201,8 @@ footer {
     align-items: center;
 }
 
-/* ========== Responsive for Tablets (≤ 1024px) ========== */
+/* Trying out some responsiveness */
+
 @media (max-width: 1024px) {
     #about-me, #skills, #projects, #contact {
         margin: 20px 50px;
@@ -233,7 +234,7 @@ footer {
     }
 }
 
-/* ========== Responsive for Mobile Devices (≤ 768px) ========== */
+
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -296,7 +297,7 @@ footer {
     }
 }
 
-/* ========== Tiny Screens (≤ 480px) ========== */
+
 @media (max-width: 480px) {
     h1, h3 {
         font-size: 1.5rem;
