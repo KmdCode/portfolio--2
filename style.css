@@ -200,3 +200,117 @@ footer {
     margin: 4rem;
     align-items: center;
 }
+
+/* ========== Responsive for Tablets (≤ 1024px) ========== */
+@media (max-width: 1024px) {
+    #about-me, #skills, #projects, #contact {
+        margin: 20px 50px;
+    }
+
+    #projects #pros {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #skills ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #skills li {
+        margin: 10px;
+    }
+
+    nav ul {
+        text-align: left;
+        padding: 0;
+    }
+
+    nav li {
+        float: none;
+        display: inline-block;
+        margin: 5px;
+    }
+}
+
+/* ========== Responsive for Mobile Devices (≤ 768px) ========== */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        width: auto;
+        padding: 10px;
+    }
+
+    #about-me {
+        flex-direction: column;
+        margin: 20px;
+        text-align: center;
+    }
+
+    #content {
+        margin: 20px;
+    }
+
+    #image img {
+        width: 100%;
+        height: auto;
+    }
+
+    #skills, #projects, #contact {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    #skills ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #projects #pros {
+        flex-direction: column;
+    }
+
+    #projects article {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    #contact form {
+        width: 100%;
+        margin: 1rem auto;
+    }
+
+    footer #links a {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+/* ========== Tiny Screens (≤ 480px) ========== */
+@media (max-width: 480px) {
+    h1, h3 {
+        font-size: 1.5rem;
+    }
+
+    #contact input, textarea {
+        width: 100%;
+    }
+
+    #content h1, #skills h1, #projects h1, #contact h1 {
+        font-size: 1.5rem;
+    }
+
+    #contact button {
+        width: 100%;
+    }
+}
